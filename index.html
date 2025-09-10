@@ -1,745 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥 AUTO-KEY ULTIMATE SCRIPT - GET YOUR ROBUX KEY NOW! 🔥</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Free Key — Official</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-a:#050510;
+      --bg-b:#0b0b15;
+      --glass: rgba(255,255,255,0.03);
+      --accent1: #7c3aed;
+      --accent2: #43d9ff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Inter',system-ui, -apple-system, 'Segoe UI', Roboto}
+    body{
+      background: linear-gradient(180deg,var(--bg-a),var(--bg-b));
+      color:#e9f3ff;display:flex;align-items:center;justify-content:center;padding:36px;overflow:hidden
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(ellipse at center, #000000 0%, #0d0d0d 30%, #1a0a1a 60%, #000000 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-        }
+    .bglayer{position:fixed;inset:0;pointer-events:none}
+    .vignette{position:absolute;inset:0;background:radial-gradient(60% 40% at 20% 20%, rgba(124,58,237,0.06), transparent), radial-gradient(50% 30% at 85% 80%, rgba(67,217,255,0.04), transparent)}
 
-        /* EFECTO GUSANO ALREDEDOR DE LA PANTALLA */
-        .worm-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            pointer-events: none;
-            z-index: 5;
-        }
+    .card{
+      width:min(980px,96vw);max-width:1100px;border-radius:16px;padding:40px;display:flex;gap:28px;align-items:center;justify-content:space-between;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 12px 60px rgba(2,6,23,0.7);border:1px solid rgba(255,255,255,0.03);position:relative;backdrop-filter:blur(6px)
+    }
 
-        .worm {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: linear-gradient(45deg, #ff0040, #ff4080, #8040ff, #4080ff);
-            border-radius: 50%;
-            box-shadow: 
-                0 0 10px #ff0040,
-                0 0 20px #ff4080,
-                0 0 30px #8040ff;
-            animation: wormMove 15s linear infinite;
-        }
+    .left{flex:1;min-width:320px}
+    .brand{font-family:'Space Grotesk',sans-serif;color:var(--accent2);letter-spacing:2px;font-weight:700;font-size:13px}
+    h1{font-family:'Space Grotesk',sans-serif;font-size:44px;margin:8px 0 6px;line-height:1;color:transparent;background:linear-gradient(90deg, #ff006a, #ff8a00, #ffe600, #00ff9d, #00c3ff, #7c3aed);background-size:400% 100%;-webkit-background-clip:text;background-clip:text;animation:rainbowText 8s linear infinite}
+    @keyframes rainbowText{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
-        .worm:nth-child(2) { animation-delay: -3s; }
-        .worm:nth-child(3) { animation-delay: -6s; }
-        .worm:nth-child(4) { animation-delay: -9s; }
-        .worm:nth-child(5) { animation-delay: -12s; }
+    p.lead{margin:6px 0 18px;color:rgba(233,243,255,0.88);font-weight:600}
+    .meta{font-size:13px;color:rgba(233,243,255,0.62);margin-bottom:20px}
 
-        @keyframes wormMove {
-            0% { 
-                left: -10px; 
-                top: 50%; 
-                transform: translateY(-50%);
-            }
-            25% { 
-                left: 50%; 
-                top: -10px; 
-                transform: translateX(-50%);
-            }
-            50% { 
-                left: calc(100vw + 10px); 
-                top: 50%; 
-                transform: translateY(-50%);
-            }
-            75% { 
-                left: 50%; 
-                top: calc(100vh + 10px); 
-                transform: translateX(-50%);
-            }
-            100% { 
-                left: -10px; 
-                top: 50%; 
-                transform: translateY(-50%);
-            }
-        }
+    .cta{appearance:none;border:0;padding:14px 26px;border-radius:12px;font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:1px;cursor:pointer;position:relative;overflow:hidden;background:linear-gradient(90deg,#ff006a,#ff8a00,#ffe600,#00ff9d,#00c3ff,#7c3aed);background-size:300% 100%;color:#041025;box-shadow:0 14px 40px rgba(67,217,255,0.09),0 6px 16px rgba(124,58,237,0.08);transition:transform .18s ease;animation:rainbowBtn 6s linear infinite}
+    @keyframes rainbowBtn{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .cta:focus{outline:none}
+    .cta:hover{transform:translateY(-6px);box-shadow:0 0 25px rgba(255,0,150,0.6),0 0 50px rgba(0,200,255,0.5)}
 
-        /* PARTÍCULAS SÚPER INTENSAS */
-        .particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
+    .right{width:300px;display:flex;align-items:center;justify-content:center}
+    .orb{width:220px;height:220px;border-radius:999px;background:radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent), conic-gradient(from 200deg, rgba(255,0,150,0.15), rgba(0,200,255,0.15), rgba(255,200,0,0.15));box-shadow:0 20px 60px rgba(8,10,18,0.6);position:relative;overflow:hidden}
 
-        .particle {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            background: #ff0040;
-            border-radius: 50%;
-            animation: float 4s infinite linear;
-            opacity: 0.8;
-            box-shadow: 
-                0 0 10px #ff0040,
-                0 0 20px #ff0040,
-                0 0 30px #ff0040;
-        }
+    .sparkles{position:absolute;inset:0;pointer-events:none}
+    .sparkle{position:absolute;width:6px;height:6px;border-radius:3px;filter:blur(1px);opacity:0;transform:translateY(0);animation:pop 3s linear infinite}
+    @keyframes pop{0%{opacity:0;transform:translateY(10px) scale(.6)}7%{opacity:1}60%{transform:translateY(-80px) scale(.5);opacity:.6}100%{opacity:0}}
 
-        .particle:nth-child(odd) {
-            background: #8040ff;
-            animation-duration: 5s;
-            box-shadow: 
-                0 0 10px #8040ff,
-                0 0 20px #8040ff,
-                0 0 30px #8040ff;
-        }
+    footer.small{position:absolute;left:28px;bottom:18px;font-size:12px;color:rgba(233,243,255,0.5)}
 
-        .particle:nth-child(3n) {
-            background: #4080ff;
-            animation-duration: 6s;
-            box-shadow: 
-                0 0 10px #4080ff,
-                0 0 20px #4080ff,
-                0 0 30px #4080ff;
-        }
-
-        .particle:nth-child(4n) {
-            background: #ff4080;
-            animation-duration: 3s;
-            box-shadow: 
-                0 0 15px #ff4080,
-                0 0 25px #ff4080,
-                0 0 35px #ff4080;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) rotate(0deg) scale(0.5);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) rotate(720deg) scale(1.5);
-                opacity: 0;
-            }
-        }
-
-        /* EFECTOS DE MATRIX RAIN */
-        .matrix-rain {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            pointer-events: none;
-        }
-
-        .matrix-char {
-            position: absolute;
-            color: #00ff41;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            animation: matrixFall 8s linear infinite;
-            opacity: 0.7;
-            text-shadow: 0 0 5px #00ff41;
-        }
-
-        @keyframes matrixFall {
-            0% {
-                transform: translateY(-100px);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.7;
-            }
-            90% {
-                opacity: 0.7;
-            }
-            100% {
-                transform: translateY(100vh);
-                opacity: 0;
-            }
-        }
-
-        /* CONTENEDOR SÚPER INTENSO */
-        .container {
-            text-align: center;
-            z-index: 10;
-            position: relative;
-            padding: 50px;
-            background: rgba(5, 5, 15, 0.95);
-            border-radius: 25px;
-            border: 3px solid transparent;
-            background-clip: padding-box;
-            backdrop-filter: blur(25px);
-            box-shadow: 
-                0 30px 60px rgba(0, 0, 0, 0.9),
-                inset 0 2px 0 rgba(255, 0, 64, 0.2),
-                0 0 100px rgba(255, 0, 64, 0.3);
-            animation: containerMegaPulse 2s ease-in-out infinite alternate;
-        }
-
-        .container::before {
-            content: '';
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            background: linear-gradient(45deg, #ff0040, #8040ff, #4080ff, #ff4080, #ff0040);
-            border-radius: 28px;
-            z-index: -1;
-            animation: borderMegaRotate 3s linear infinite;
-            filter: blur(2px);
-        }
-
-        .container::after {
-            content: '';
-            position: absolute;
-            top: -6px;
-            left: -6px;
-            right: -6px;
-            bottom: -6px;
-            background: linear-gradient(90deg, #ff0040, #8040ff, #4080ff, #ff4080, #ff0040);
-            border-radius: 31px;
-            z-index: -2;
-            animation: borderMegaRotate 4s linear infinite reverse;
-            opacity: 0.7;
-            filter: blur(4px);
-        }
-
-        @keyframes containerMegaPulse {
-            0% { 
-                transform: scale(1) rotateX(0deg);
-                box-shadow: 
-                    0 30px 60px rgba(0, 0, 0, 0.9),
-                    inset 0 2px 0 rgba(255, 0, 64, 0.2),
-                    0 0 100px rgba(255, 0, 64, 0.3);
-            }
-            100% { 
-                transform: scale(1.05) rotateX(5deg);
-                box-shadow: 
-                    0 40px 80px rgba(0, 0, 0, 0.9),
-                    inset 0 2px 0 rgba(255, 0, 64, 0.4),
-                    0 0 150px rgba(255, 0, 64, 0.5);
-            }
-        }
-
-        @keyframes borderMegaRotate {
-            0% { transform: rotate(0deg) scale(1); }
-            50% { transform: rotate(180deg) scale(1.02); }
-            100% { transform: rotate(360deg) scale(1); }
-        }
-
-        /* TÍTULO MEGA ÉPICO */
-        .title {
-            font-size: 4.5rem;
-            font-weight: 900;
-            background: linear-gradient(45deg, #ff0040, #ff4080, #8040ff, #4080ff, #ff0040);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: megaGradientShift 2s ease-in-out infinite;
-            margin-bottom: 15px;
-            text-shadow: 
-                0 0 20px rgba(255, 0, 64, 0.8),
-                0 0 40px rgba(255, 64, 128, 0.6),
-                0 0 60px rgba(128, 64, 255, 0.4);
-            filter: drop-shadow(0 0 10px #ff0040);
-            transform: perspective(500px) rotateX(10deg);
-        }
-
-        @keyframes megaGradientShift {
-            0%, 100% { 
-                background-position: 0% 50%; 
-                transform: perspective(500px) rotateX(10deg) scale(1);
-            }
-            25% { 
-                background-position: 100% 50%; 
-                transform: perspective(500px) rotateX(15deg) scale(1.02);
-            }
-            50% { 
-                background-position: 200% 50%; 
-                transform: perspective(500px) rotateX(10deg) scale(1.05);
-            }
-            75% { 
-                background-position: 300% 50%; 
-                transform: perspective(500px) rotateX(5deg) scale(1.02);
-            }
-        }
-
-        /* SUBTÍTULO CON MARKETING */
-        .subtitle {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #ff4080;
-            margin-bottom: 25px;
-            opacity: 0;
-            animation: fadeInUp 1s ease-out 0.5s forwards;
-            text-shadow: 
-                0 0 10px rgba(255, 64, 128, 0.8),
-                0 0 20px rgba(255, 64, 128, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* TEXTO DE MARKETING SÚPER ATRACTIVO */
-        .marketing-text {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #ffffff;
-            margin-bottom: 30px;
-            opacity: 0;
-            animation: fadeInUp 1s ease-out 1s forwards;
-            line-height: 1.6;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .highlight-text {
-            color: #ff0040;
-            font-weight: 800;
-            text-shadow: 0 0 10px rgba(255, 0, 64, 0.8);
-            animation: textGlow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes textGlow {
-            0% { 
-                color: #ff0040;
-                text-shadow: 0 0 10px rgba(255, 0, 64, 0.8);
-            }
-            100% { 
-                color: #ff4080;
-                text-shadow: 0 0 20px rgba(255, 64, 128, 1);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* BOTÓN MEGA ÉPICO */
-        .main-button {
-            position: relative;
-            display: inline-block;
-            padding: 25px 60px;
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            border: none;
-            border-radius: 60px;
-            background: linear-gradient(45deg, #ff0040, #ff4080, #8040ff, #4080ff, #ff0040);
-            background-size: 500% 500%;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            animation: megaButtonPulse 1.5s ease-in-out infinite alternate;
-            box-shadow: 
-                0 20px 50px rgba(255, 0, 64, 0.6),
-                0 0 80px rgba(255, 64, 128, 0.5),
-                inset 0 2px 0 rgba(255, 255, 255, 0.2);
-            overflow: hidden;
-            transform: perspective(500px) rotateX(5deg);
-        }
-
-        .main-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-            transition: left 0.8s ease;
-        }
-
-        .main-button::after {
-            content: '💎';
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
-            animation: gemSpin 3s linear infinite;
-        }
-
-        @keyframes gemSpin {
-            0% { transform: translateY(-50%) rotate(0deg) scale(1); }
-            50% { transform: translateY(-50%) rotate(180deg) scale(1.2); }
-            100% { transform: translateY(-50%) rotate(360deg) scale(1); }
-        }
-
-        .main-button:hover::before {
-            left: 100%;
-        }
-
-        .main-button:hover {
-            transform: perspective(500px) rotateX(10deg) translateY(-8px) scale(1.1);
-            box-shadow: 
-                0 30px 70px rgba(255, 0, 64, 0.8),
-                0 0 120px rgba(255, 64, 128, 0.7),
-                inset 0 2px 0 rgba(255, 255, 255, 0.4);
-            background-position: 200% 50%;
-        }
-
-        @keyframes megaButtonPulse {
-            0% { 
-                background-position: 0% 50%;
-                box-shadow: 
-                    0 20px 50px rgba(255, 0, 64, 0.6),
-                    0 0 80px rgba(255, 64, 128, 0.5),
-                    inset 0 2px 0 rgba(255, 255, 255, 0.2);
-                transform: perspective(500px) rotateX(5deg) scale(1);
-            }
-            100% { 
-                background-position: 100% 50%;
-                box-shadow: 
-                    0 25px 60px rgba(255, 0, 64, 0.8),
-                    0 0 100px rgba(255, 64, 128, 0.7),
-                    inset 0 2px 0 rgba(255, 255, 255, 0.3);
-                transform: perspective(500px) rotateX(8deg) scale(1.03);
-            }
-        }
-
-        /* Características */
-        .features {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            opacity: 0;
-            animation: fadeInUp 1s ease-out 1s forwards;
-        }
-
-        .feature {
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .feature:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.2);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .feature-text {
-            color: #e0e0e0;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
-        /* Efectos de ondas */
-        .wave {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 200px;
-            height: 200px;
-            border: 2px solid rgba(0, 212, 255, 0.3);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            animation: wave 3s ease-out infinite;
-        }
-
-        .wave:nth-child(2) {
-            animation-delay: 1s;
-        }
-
-        .wave:nth-child(3) {
-            animation-delay: 2s;
-        }
-
-        @keyframes wave {
-            0% {
-                width: 200px;
-                height: 200px;
-                opacity: 1;
-            }
-            100% {
-                width: 800px;
-                height: 800px;
-                opacity: 0;
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .title {
-                font-size: 2.5rem;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .main-button {
-                padding: 15px 35px;
-                font-size: 1.2rem;
-            }
-            
-            .container {
-                padding: 30px 20px;
-                margin: 20px;
-            }
-        }
-    </style>
+    @media (max-width:880px){.card{flex-direction:column-reverse;padding:22px}.right{width:100%}h1{font-size:28px}}
+  </style>
 </head>
 <body>
-    <!-- Partículas de fondo -->
-    <div class="particles" id="particles"></div>
-    
-    <!-- Ondas de efecto -->
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
+  <div class="bglayer" aria-hidden="true">
+    <div class="vignette"></div>
+    <canvas id="particles" style="position:fixed;inset:0;z-index:0"></canvas>
+  </div>
 
-    <!-- EFECTO GUSANO ALREDEDOR DE LA PANTALLA -->
-    <div class="worm-container">
-        <div class="worm"></div>
-        <div class="worm"></div>
-        <div class="worm"></div>
-        <div class="worm"></div>
-        <div class="worm"></div>
-    </div>
+  <main class="card" role="main" aria-label="Free Key landing">
+    <section class="left">
+      <div class="brand">Official Release</div>
+      <h1>Unique Functional Script</h1>
+      <p class="lead">The only working script of the moment — ready to use.</p>
+      <div class="meta">Secure link — distributed officially. Click the button below to proceed to the shared server resource.</div>
 
-    <!-- EFECTOS MATRIX RAIN -->
-    <div class="matrix-rain" id="matrixRain"></div>
+      <div style="display:flex;gap:12px;align-items:center;margin-top:6px">
+        <a class="cta" id="openBtn" href="https://www.roblox.com/share?code=d91613484aad304eb3f2f6a80c6b803a&type=Server" target="_blank" rel="noopener noreferrer">Get Key</a>
+      </div>
 
-    <!-- CONTENEDOR PRINCIPAL MEGA ÉPICO -->
-    <div class="container">
-        <h1 class="title">🔑 AUTO-KEY 🔑</h1>
-        <p class="subtitle">GET YOUR ROBUX KEY NOW!</p>
-        
-        <div class="marketing-text">
-            🔥 <span class="highlight-text">ULTIMATE ROBLOX HACK</span> - Unlock <span class="highlight-text">GODLIKE POWERS</span> in every game! 🔥<br>
-            ⚡ <span class="highlight-text">INSTANT ACTIVATION</span> - No waiting, no delays! ⚡<br>
-            💎 <span class="highlight-text">PREMIUM FEATURES</span> - Worth 10,000+ Robux for only 399! 💎
+      <footer class="small">Made with care • Minimal • Professional</footer>
+    </section>
+
+    <aside class="right" aria-hidden="true">
+      <div class="orb">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:relative;z-index:2">
+          <circle cx="60" cy="60" r="36" stroke="white" stroke-opacity="0.9" stroke-width="1.2"/>
+          <path d="M60 36 L74 64 L60 88 L46 64 Z" fill="white" opacity="0.06"/>
+        </svg>
+        <div class="sparkles">
+          <div class="sparkle" style="left:18%;top:78%;animation-delay:0s;background:rgba(255,0,150,0.95)"></div>
+          <div class="sparkle" style="left:52%;top:82%;animation-delay:0.3s;background:rgba(0,200,255,0.95)"></div>
+          <div class="sparkle" style="left:76%;top:38%;animation-delay:0.9s;background:rgba(255,214,0,0.95)"></div>
+          <div class="sparkle" style="left:34%;top:24%;animation-delay:1.4s;background:rgba(124,58,237,0.95)"></div>
         </div>
-        
-        <a href="https://www.roblox.com/es/game-pass/1452140865/Auto-Key-Script-Xmodder" 
-           class="main-button" 
-           target="_blank">
-            🚀 BUY NOW - 399 ROBUX
-        </a>
-        
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">👻</div>
-                <div class="feature-text">INVISIBLE MODE</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🔍</div>
-                <div class="feature-text">ESP WALLHACK</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">⚡</div>
-                <div class="feature-text">SPEED HACK</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🦘</div>
-                <div class="feature-text">SUPER JUMP</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🎯</div>
-                <div class="feature-text">AUTO SEARCH</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">👑</div>
-                <div class="feature-text">GOD MODE</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">💰</div>
-                <div class="feature-text">MONEY HACK</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🎮</div>
-                <div class="feature-text">ALL GAMES</div>
-            </div>
-        </div>
-    </div>
+      </div>
+    </aside>
+  </main>
 
-    <script>
-        // GENERAR PARTÍCULAS SÚPER INTENSAS
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            
-            for (let i = 0; i < 80; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 4 + 's';
-                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
-                particlesContainer.appendChild(particle);
-            }
-        }
+  <script>
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let W = canvas.width = innerWidth; let H = canvas.height = innerHeight;
 
-        // CREAR EFECTOS MATRIX RAIN
-        function createMatrixRain() {
-            const matrixContainer = document.getElementById('matrixRain');
-            const chars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            
-            for (let i = 0; i < 30; i++) {
-                const char = document.createElement('div');
-                char.className = 'matrix-char';
-                char.textContent = chars[Math.floor(Math.random() * chars.length)];
-                char.style.left = Math.random() * 100 + '%';
-                char.style.animationDelay = Math.random() * 8 + 's';
-                char.style.animationDuration = (Math.random() * 4 + 6) + 's';
-                matrixContainer.appendChild(char);
-            }
-        }
+    const colors = ['rgba(255,0,150,0.9)','rgba(0,200,255,0.9)','rgba(255,214,0,0.9)','rgba(124,58,237,0.9)'];
+    const particles = [];
+    const COUNT = Math.round((W*H)/90000);
 
-        // EFECTO DE CURSOR MEGA ÉPICO
-        document.addEventListener('mousemove', (e) => {
-            const cursor = document.createElement('div');
-            cursor.style.position = 'absolute';
-            cursor.style.left = e.pageX + 'px';
-            cursor.style.top = e.pageY + 'px';
-            cursor.style.width = '15px';
-            cursor.style.height = '15px';
-            cursor.style.background = 'radial-gradient(circle, rgba(255,0,64,0.9) 0%, rgba(255,64,128,0.6) 50%, transparent 70%)';
-            cursor.style.borderRadius = '50%';
-            cursor.style.pointerEvents = 'none';
-            cursor.style.zIndex = '1000';
-            cursor.style.animation = 'megaFadeOut 1.5s ease-out forwards';
-            cursor.style.boxShadow = '0 0 20px rgba(255,0,64,0.8)';
-            document.body.appendChild(cursor);
-            
-            setTimeout(() => {
-                cursor.remove();
-            }, 1500);
+    function rand(min,max){return Math.random()*(max-min)+min}
+
+    function init(){
+      particles.length = 0;
+      for(let i=0;i<COUNT;i++){
+        particles.push({
+          x: Math.random()*W,
+          y: Math.random()*H,
+          r: rand(0.8,2.8),
+          vx: rand(-0.2,0.2),
+          vy: rand(-0.15,0.15),
+          c: colors[Math.floor(Math.random()*colors.length)],
+          a: rand(0.4,1),
         });
+      }
+    }
 
-        // EFECTOS DE EXPLOSIÓN AL HACER CLICK
-        document.addEventListener('click', (e) => {
-            for (let i = 0; i < 8; i++) {
-                const spark = document.createElement('div');
-                spark.style.position = 'absolute';
-                spark.style.left = e.pageX + 'px';
-                spark.style.top = e.pageY + 'px';
-                spark.style.width = '4px';
-                spark.style.height = '4px';
-                spark.style.background = '#ff0040';
-                spark.style.borderRadius = '50%';
-                spark.style.pointerEvents = 'none';
-                spark.style.zIndex = '1000';
-                spark.style.boxShadow = '0 0 10px #ff0040';
-                
-                const angle = (i / 8) * Math.PI * 2;
-                const distance = 50 + Math.random() * 50;
-                const endX = Math.cos(angle) * distance;
-                const endY = Math.sin(angle) * distance;
-                
-                spark.style.animation = `sparkFly 0.8s ease-out forwards`;
-                spark.style.setProperty('--endX', endX + 'px');
-                spark.style.setProperty('--endY', endY + 'px');
-                
-                document.body.appendChild(spark);
-                
-                setTimeout(() => {
-                    spark.remove();
-                }, 800);
-            }
-        });
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      for(const p of particles){
+        ctx.beginPath();
+        ctx.fillStyle = p.c;
+        ctx.globalAlpha = p.a;
+        ctx.shadowBlur = 18;
+        ctx.shadowColor = p.c;
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fill();
 
-        // AGREGAR ANIMACIONES DINÁMICAS
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes megaFadeOut {
-                0% { opacity: 1; transform: scale(1); }
-                100% { opacity: 0; transform: scale(2); }
-            }
-            
-            @keyframes sparkFly {
-                0% { 
-                    opacity: 1; 
-                    transform: translate(0, 0) scale(1);
-                }
-                100% { 
-                    opacity: 0; 
-                    transform: translate(var(--endX), var(--endY)) scale(0);
-                }
-            }
-        `;
-        document.head.appendChild(style);
+        p.x += p.vx; p.y += p.vy;
+        if(p.x < -10) p.x = W + 10; if(p.x > W + 10) p.x = -10;
+        if(p.y < -10) p.y = H + 10; if(p.y > H + 10) p.y = -10;
+      }
+      requestAnimationFrame(draw);
+    }
 
-        // INICIALIZAR TODOS LOS EFECTOS
-        createParticles();
-        createMatrixRain();
+    window.addEventListener('resize',()=>{W=canvas.width=innerWidth;H=canvas.height=innerHeight;init();});
+    init(); draw();
 
-        // EFECTOS DE SONIDO Y VIBRACIÓN
-        document.querySelector('.main-button').addEventListener('mouseenter', () => {
-            if (navigator.vibrate) {
-                navigator.vibrate([100, 50, 100]);
-            }
-        });
-
-        // EFECTO DE SHAKE AL HACER CLICK EN EL BOTÓN
-        document.querySelector('.main-button').addEventListener('click', () => {
-            document.querySelector('.container').style.animation = 'none';
-            setTimeout(() => {
-                document.querySelector('.container').style.animation = 'containerMegaPulse 2s ease-in-out infinite alternate, shake 0.5s ease-in-out';
-            }, 10);
-            
-            if (navigator.vibrate) {
-                navigator.vibrate([200, 100, 200, 100, 200]);
-            }
-        });
-
-        // AGREGAR ANIMACIÓN DE SHAKE
-        const shakeStyle = document.createElement('style');
-        shakeStyle.textContent = `
-            @keyframes shake {
-                0%, 100% { transform: translateX(0) scale(1); }
-                25% { transform: translateX(-5px) scale(1.02); }
-                75% { transform: translateX(5px) scale(1.02); }
-            }
-        `;
-        document.head.appendChild(shakeStyle);
-    </script>
+    const sparks = document.querySelectorAll('.sparkle');
+    sparks.forEach(s => {
+      const dur = 2400 + Math.random()*1600;
+      s.style.animationDuration = dur + 'ms';
+    });
+  </script>
 </body>
 </html>
